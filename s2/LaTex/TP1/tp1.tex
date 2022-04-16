@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}%encodage des caractères
+\usepackage[T1]{fontenc}%encodage de la police
+\usepackage[french]{babel}%langue française
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Mon rapport}
+\author{Alain Terrieur}
+\date{\today}%date du jour
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Ma première section}
+
+\subsection{Une sous-section}
+\label{coucou}
+
+\textit{Ce texte est en italique} tandis que \textbf{celui-ci est en gras}.
+
+\subsection{Une autre sous-section}
+
+Liste des items :
+
+\begin{itemize}
+	\item item 1
+	\item item 2
+	\item item 3
+\end{itemize}
+
+\section{Nouvelle section}
+
+Ceci est un rapport rédigé en LaTeX\footnote{langage que nous apprenons aujourd'hui.}. La première sous-section, c'est-à-dire la sous-section~\ref{coucou} se situe en page~\pageref{coucou} (numéro de page calculé automatiquement). Ci-dessous se trouve une liste numérotée d'items :
+
+\begin{enumerate}
+	\item bla
+	\item ble
+	\item bli
+	\item blo
+	\item blu
+\end{enumerate}
+
+\section{Les tableaux}
+
+\begin{table}[ht]
+ \begin{center}
+	\begin{tabular}{|c|l|r|}
+		\hline
+		texte centré & texte à gauche & texte à droite  \\\hline
+		a & b & c \\\hline
+		d & e & f \\\hline
+	\end{tabular}
+ \end{center}
+ \caption{Nom du tableau}
+ \label{tab:mon_tableau}
+\end{table}
+
+Le tableau \ref{tab:mon_tableau} est nommé.
+
+\section{Insérer une image}
+
+La Figure \ref{fig:mon_image} mesure en largeur la moitié de la largeur du texte.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{./images/smiley.png} 
+  \end{center}
+  \caption{Une photo de smiley}
+  \label{fig:mon_image}
+\end{figure}
+
+\section{Le mode mathématique}
+
+
+Le nombre $\pi$ vaut environ $3.14$, ou encore $\frac{22}{7}$ ou $\frac{\frac{44}{2}}{\sqrt{7^2}}$ à un (gros) $\epsilon$ près.\\
+
+
+
+Une équation non numérotée :
+$$a^2 + b^2 = c^2$$
+
+Une équation numérotée :
+
+\begin{equation}
+a^2 + b^2 = c^2
+\label{equation}
+\end{equation}
+
+On peut citer l'équation précédente comme étant l'équation \ref{equation}.
+
+Avec "align", on peut citer chaque ligne d'une équation. Par exemple, l'équation~\ref{equation1} et l'équation~\ref{equation2}.
+
+\begin{align}
+   f(x) & = & x^2 + 8x + 16 \label{equation1}\\  
+   & = & (x+4)^2 \label{equation2}
+\end{align}
+
+
+\section{Citer ses sources}
+
+\end{document}

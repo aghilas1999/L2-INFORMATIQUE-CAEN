@@ -1,0 +1,40 @@
+[text]
+Paragraphe Num1
+[/text]	
+[question]
+Question du paragraphe Num1
+[/question]
+
+<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>n
+[text]
+Paragraphe Num2
+[/text]	
+[question]
+Question du paragraphe Num2
+[/question]
+
+<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>n
+[text]
+Paragraphe Num3
+[/text]	
+[question]
+Question du paragraphe Num3
+[/question]
+
+<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>n
+[text]
+Paragraphe Num4
+[/text]	
+[question]
+Question du paragraphe Num4
+[/question]
+
+<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>n
+[text]
+Paragraphe Num5
+[/text]	
+[question]
+Question du paragraphe Num5
+[/question]
+
+<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>n
